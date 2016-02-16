@@ -1,0 +1,40 @@
+/* 
+    Created on : Feb 16, 2016, 12:45:24 AM
+    Author     : Rafael C. B. de Oliveira
+*/
+
+
+body {
+    margin:0px;
+    width:800px;
+    
+}
+
+#container {
+    height:100%;
+    overflow:hidden;
+}
+
+#banner {
+    background-color: #d0e4fe;
+    font-size:300%;
+    text-align: center;
+}
+
+#columnLeft{
+    width:500px;
+    float:left;
+}
+
+#columnRight {
+    width:300px;
+    float: right;
+}
+
+#footer {
+    background-color: bisque;
+    Color: grey;
+    float:left;
+    text-align:center;
+    width:800px;
+}
