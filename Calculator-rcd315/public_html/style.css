@@ -1,0 +1,139 @@
+/* 
+    Created on : Mar 5, 2016, 12:58:02 PM
+    Author     : Rafael
+*/
+
+#numberText 
+{
+    text-align:right;
+    position:fixed;
+    top:30%;
+    left:50%;
+}
+#calc_box
+{
+    background-color: gray; 
+    position:fixed;
+    top:25%;
+    left:48%;
+    width:8%;
+    height:15%;
+    margin:25px;
+    padding:25px;
+    border-radius:25px;
+    border: 2px solid #ff3333;
+}
+
+#calc_table
+{
+    position:fixed;
+    top:33%;
+    left:51.5%;
+}
+
+#num0
+{
+    background-color: red;
+    width:30px;
+}
+
+#num1
+{
+    background-color: red;
+    width:30px;
+}
+
+#num2
+{
+    background-color: red;
+    width:30px;
+}
+
+#num3
+{
+    background-color: red;
+    width:30px;
+}
+
+#num4
+{
+    background-color: red;
+    width:30px;
+}
+
+#num5
+{
+    background-color: red;
+    width:30px;
+}
+
+#num6
+{
+    background-color: red;
+    width:30px;
+}
+
+#num7
+{
+    background-color: red;
+    width:30px;
+}
+
+#num8
+{
+    background-color: red;
+    width:30px;
+}
+
+#num9
+{
+    background-color: red;
+    width:30px;
+}
+
+#clearButton
+{
+    background-color:black;
+    color:white;
+    width:30px;
+}
+
+#dotButton
+{
+    background-color:black;
+    color:white;
+    width:30px;
+}
+
+#multButton
+{
+    background-color:black;
+    color:white;
+    width:30px;
+}
+#addButton
+{
+    background-color:black;
+    color:white;
+    width:30px;
+}
+#subButton
+{
+    background-color:black;
+    color:white;
+    width:30px;
+}
+#divButton
+{
+    background-color:black;
+    color:white;
+    width:30px;
+}
+#pushButton
+{
+    background-color:black;
+    color:white;
+    position:fixed;
+    top:45%;
+    left:53.5%;
+}

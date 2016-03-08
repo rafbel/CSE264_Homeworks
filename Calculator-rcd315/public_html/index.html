@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript"
+            src="calc.js">
+        </script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body>
+        <div id="calc_box">
+            <input id="numberText" value="0" readonly>
+            <table id="calc_table">
+
+
+                <!-- Row 1 -->
+                <tr>
+                <td><input type="button" id="num1" value="1" onclick="addNumber(this.id)"></td>
+                <td><input type="button" id="num2" value="2" onclick="addNumber(this.id)"></td>
+                <td><input type="button" id="num3" value="3" onclick="addNumber(this.id)"></td>
+                <td><input type="button" id="addButton" value="+" onclick="addStack()"></td>
+                </tr>
+
+                <!-- Row 2 -->
+                <tr>
+                <td><input type="button" id="num4" value="4" onclick="addNumber(this.id)"></td>
+                <td><input type="button" id="num5" value="5" onclick="addNumber(this.id)"></td>
+                <td><input type="button" id="num6" value="6" onclick="addNumber(this.id)"></td>
+                <td><input type="button" id="subButton" value="-" onclick="subStack()"></td>
+                </tr>
+
+                <!-- Row 3 -->
+                <tr>
+                <td><input type="button" id="num7" value="7" onclick="addNumber(this.id)"></td>
+                <td><input type="button" id="num8" value="8" onclick="addNumber(this.id)"></td>
+                <td><input type="button" id="num9" value="9" onclick="addNumber(this.id)"></td>
+                <td><input type="button" id="multButton" value="*" onclick="multStack()"></td>
+                </tr>
+
+                <!-- Row 4 -->
+                <tr>
+                <td><input type="button" id="clearButton" value="C" onclick="clearCalculator()"></td>
+                <td><input type="button" id="num0" value="0" onclick="addNumber(this.id)"></td>
+                <td><input type="button" id="dotButton" value="." onclick="addDot()"></td>
+                <td><input type="button" id="divButton" value="/" onclick="divStack()"></td>
+                </tr>
+                
+            </table>
+            <input type="button" id="pushButton" value="Push" onclick="pushStack()">
+        </div>
+    </body>
+
