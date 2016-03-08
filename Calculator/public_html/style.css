@@ -7,133 +7,157 @@
 {
     text-align:right;
     position:fixed;
-    top:30%;
+    top:6%;
     left:50%;
+    transform: translate(-50%,-50%);
+    width:99%;
 }
 #calc_box
 {
     background-color: gray; 
     position:fixed;
-    top:25%;
-    left:48%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
     width:8%;
-    height:15%;
+    height:20%;
     margin:25px;
     padding:25px;
-    border-radius:25px;
     border: 2px solid #ff3333;
 }
 
 #calc_table
 {
     position:fixed;
-    top:33%;
-    left:51.5%;
+    top:48%;
+    left:49%;
+    width:90%;
+    height:65%;
+    transform: translate(-50%,-50%);
 }
 
 #num0
 {
     background-color: red;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 
 #num1
 {
     background-color: red;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 
 #num2
 {
     background-color: red;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 
 #num3
 {
     background-color: red;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 
 #num4
 {
     background-color: red;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 
 #num5
 {
     background-color: red;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 
 #num6
 {
     background-color: red;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 
 #num7
 {
     background-color: red;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 
 #num8
 {
     background-color: red;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 
 #num9
 {
     background-color: red;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 
 #clearButton
 {
     background-color:black;
     color:white;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 
 #dotButton
 {
     background-color:black;
     color:white;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 
 #multButton
 {
     background-color:black;
     color:white;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 #addButton
 {
     background-color:black;
     color:white;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 #subButton
 {
     background-color:black;
     color:white;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 #divButton
 {
     background-color:black;
     color:white;
-    width:30px;
+    width:120%;
+    height:150%;
 }
 #pushButton
 {
     background-color:black;
     color:white;
     position:fixed;
-    top:45%;
-    left:53.5%;
+    width:45%;
+    height:14%;
+    top:90%;
+    left:51%;
+    transform: translate(-50%,-50%);
 }
