@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+Student name: Rafael C. B. de Oliveira 
+CSE264
+-->
+
+<html>
+    <head>
+        <title>Magnetic Poetry</title>
+        <meta charset="UTF-8">
+        
+		<style>
+			body 
+			{
+				
+				height:100%;
+				width:100%;
+				padding:0px;
+				margin:0px;
+				background-color: black;
+			}
+		
+			button
+			{
+				z-index:9;
+				color:black;
+				background-color:white;
+				font-weight:bold;
+				position:absolute;
+				
+			}
+			
+			#AddSection
+			{
+				top:70%;
+				left:50%;
+				transform: translate(-50%,-50%);
+				position:absolute;
+
+				display:inline;
+			}
+			
+			#addWordButton
+			{
+				top:0;
+				left:100%;
+				width:100px;
+			}
+
+			#magneticPage
+			{
+				z-index:1;
+				height: 100%;
+				width:100%;
+				overflow:hidden;
+
+			}
+			
+			
+		</style>
+		
+		<script type="text/javascript">
+			
+			
+			window.addEventListener('load',function() //on window load
+			{
+					var magPage = document.getElementById("magneticPage");
+					var currentWord = null;
+					
+					var id;
+					for (id = 1; id <= 18; id++)
+					{
+						makeDefaultMagnetic(id);
+					}
+			
+					document.getElementById("addWordButton").addEventListener('click',function()
+					{
+						var inputText = document.getElementById("wordText");
+						
+						
+						new MagnetWord(inputText.value);
+						
+						inputText.value = "";
+					},false);
+
+				var mouseDownList = function(event,word) //event listener function for mouse down
+				{
+						currentWord = word;
+						var topOffset = currentWord.offsetTop;
+						var leftOffset = currentWord.offsetLeft;
+						
+						var mouseReleaseList = function() //event listener function for mouse up
+						{
+							currentWord = null;
+							window.removeEventListener('mousemove',mouseMoveList,false);
+							currentWord.removeEventListener('mouseup',mouseReleaseList,false);
+						};
+						
+						var mouseMoveList = function(event) //event listener function for mouse move
+						{
+							if (currentWord !== null)
+							{
+								var xMove = event.clientX;
+								var yMove = event.clientY;
+								
+								currentWord.style.left = xMove + 'px';
+								currentWord.style.top = yMove + 'px';
+							}
+						};
+											
+						currentWord.addEventListener('mouseup',mouseReleaseList,false);
+						window.addEventListener('mousemove',mouseMoveList,false);
+				}
+			
+			
+				var MagnetWord = function(text) //creates magnetic word
+				{
+					if (text !== "")
+					{
+						var buttonText = document.createTextNode(text);
+					
+						var newWord = document.createElement("BUTTON");
+						newWord.appendChild(buttonText);
+					
+						magPage.appendChild(newWord);
+						
+						
+						newWord.addEventListener('mousedown', function(event)
+						{
+							mouseDownList(event,newWord);
+						},false);
+					}
+				};
+				
+				function makeDefaultMagnetic(id) //makes starting buttons also magnetic
+				{
+					var buttonID = 'but' + id;
+					var defaultButton = document.getElementById(buttonID);
+					defaultButton.style.left = 80 + (id - 1)*95 + 'px';
+					defaultButton.style.top = 20 + 'px';
+					defaultButton.addEventListener('mousedown',function(event) { mouseDownList(event,defaultButton);},false);
+					
+				};
+			
+			},false);
+			
+		</script>
+		
+    </head>
+    <body>
+			
+		<div id="magneticPage">
+			<div id = "defButtons">
+				<button id="but1">Bacon</button>
+				<button id="but2">Detest</button>
+				<button id="but3">Like</button>
+				<button id="but4">Bars</button>
+				<button id="but5">Caramel</button>
+				<button id="but6">Cookies</button>
+				<button id="but7">Hate</button>
+				<button id="but8">Adore</button>
+				<button id="but9">Mom</button>
+				<button id="but10">Cow</button>
+				<button id="but11">Milk</button>
+				<button id="but12">Love</button>
+				<button id="but13">Sister</button>
+				<button id="but14">Baby</button>
+				<button id="but15">Sugar</button>
+				<button id="but16">Hike</button>
+				<button id="but17">Eat</button>
+				<button id="but18">On</button>
+			</div>
+		
+			<div id="AddSection">
+				<input id="wordText">
+				<button id="addWordButton">Add Word</button>
+			</div>
+			
+		</div>
+
+		
+        
+    </body>
+</html>
