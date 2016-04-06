@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+Student name: Rafael C. B. de Oliveira 
+CSE264
+-->
+<html>
+    <head>
+        <title>Ron Swanson's Personal Website</title>
+        <script src="http://code.jquery.com/jquery-2.1.0.min.js" type="text/javascript">
+            </script>
+        <script src="outline.js" type="text/javascript"></script>
+        <meta charset="UTF-8">
+        
+       <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id ="container">
+            <div id="banner" > 
+                Ron Swanson
+            
+            </div>
+            
+            <div id ="columnLeft">
+                <h1> Bio </h1>
+                <h2> Early Life </h2>
+                <p>
+                    I was born a Swanson. Even as a boy, I always knew that breakfast food is the right type of food, doesn't matter what time of the day it is.
+                    I've always had a passion for meat. I was raised to be a good man. I always hated the government, even as a kid. 
+                </p>
+                
+                
+                <h2>Working at the Parks and Rec Department</h2>
+                <p>
+                    The thing I liked most about my job is that all I did was absolutely nothing. Sure, I would do Leslie Knope some favors from time to time; however,
+                    I was terribly ineficient at anything government-related, which is something the government is.
+                    
+                </p>
+                
+                <h2>Life at Lehigh</h2>
+                <p> 
+                    I came to Lehigh University to try and make the government seem even more inefficient.
+                    And also because they serve good quality bacon.
+                
+                </p>
+                <h1> Favorites </h1>
+                <ul>
+                    <li>Woodworking</li>
+                    <li>Body Odor</li>
+                    <li>America</li>
+                    <li>Bacon-wrapped Shrimp</li>
+                    <li>Bacon and Eggs</li>
+                    <li>Bacon</li>
+                       
+                </ul>
+                <h1> Courses </h1>
+                <ul>
+                    <li>A History of Bacon</li>
+                    <li>America: Why It is the Greatest</li>
+                    <li>A History of Claymores</li>
+                    <li>How to End the Government</li>
+                    <li>Dealing with People Who Don't Understand Woodworking</li>
+                </ul>
+                
+                <h1> Music </h1>
+                <table border = "7">
+                    <tr>
+                        <td><a href="https://www.amazon.com/Star-Spangled-Service-American-Institute-Blackstone/dp/B00I9WOLK6/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1455605900&sr=1-1&keywords=francis+scott+key+star+spangled+banner">The Star-Spangled Banner</a></td>
+                        <td>John Stanford Smith</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href="https://www.amazon.com/gp/product/B00A8NHNBI?ie=UTF8&keywords=hello%20walls&qid=1455605296&ref_=sr_1_3&sr=8-3">Hello Walls</a></td>
+                        <td>Willie Nelson</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href="https://www.amazon.com/Night-Forest-Nature-Sounds/dp/B005FC9XKG/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1455605752&sr=1-2-mp3-albums-bar-strip-0&keywords=sound+of+nature">
+                                A Night in the Forest (Nature Sounds)</a></td>
+                        <td>Sounds of Nature for Deep Sleep and Relaxation</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div id="columnRight">
+                <img src=
+                     "data:image/jpeg;base64,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"
+                     alt="Ron Swanson">
+                     <h1>Fun Facts</h1>
+                     <ol>
+                         <li>I enjoy a good banquet of bacon</li>
+                         <li>The perfect government would be one where one guy sits in a small room at a desk, and the only thing he's allowed to decide is who to nuke</li>
+                         <li>I'm able to make the perfect canoe with my woodworking skills </li>
+                         <li>Vegetarian bacon is not food</li>
+                         <li>Government wastes taxpayer money every second</li>
+                     </ol>
+                
+            </div>
+            
+            <div id="footer">
+                 Copyright © Ron Swanson 2016
+                
+            </div>
+        </div>
+     
+    </body>
+</html>
